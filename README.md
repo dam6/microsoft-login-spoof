@@ -1,28 +1,27 @@
-# Modern Microsoft login page for pentesting.
+# Modern Microsoft login spoof template.
 
-###### Good looking html login and a bit of JavaScript ensures user information collection.
+## About
 
-Outlook-login-clone includes two versions, HTML&JS-only directory contains just what the dir's name say and in the express-password-collector is powerfull and simple express api writen with TypeScript.
+This repo aims to provide a hands-on learning experience about cybersecurity, specifically focusing on the techniques used in creating and defending against spoofed login pages. This project is intended for educational purposes only and should not be used for any malicious activities.
 
-"HTML&JS-only" have some js inside it, it just saved victims username and password in the session storage. 
-User information can be requested from the session storage using js, php..
+## Screenshots
 
-for example;
+![Screenshot1](screenshots/index1.png)
+![Screenshot2](screenshots/index2.png)
 
-```javascript
-let userName = sessionStorage.getItem("user");
-let password = sessionStorage.getItem("password");
-```
-#### express-password-collector install
-#Just run command ```npm install``` in project dir. <br />
-To start API, run command ```npm run dev```.
+## Disclaimer
 
-Now go to localhost:5000 and you can see the loginform. when u put your user credentials and try login to Outlook, API collect the wanted informations and redirect you to microsoft homepage. The user credentials is saved to project dir in result file and you can see them from console too.
+This repository contains code for a spoofed login page, which is created and shared solely for educational and ethical purposes. The goal of this project is to raise awareness about the dangers of phishing attacks and to help individuals understand how they work so that they can better protect themselves and their systems against such attacks.
 
-#
-###### ToDo; Mobile version
-#
+## Usage
 
-This is for ethical use only :)
+To use this code for educational purposes:
 
-<a href="https://www.buymeacoffee.com/rintsi" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
+1. Clone this repository to your local machine.
+2. Open the `index.html` file in a web browser to view the spoofed login page.
+
+**Again, it is crucial to reiterate that this code should never be used for any malicious intent.**
+
+## License
+
+This project is licensed under the [MIT License](LICENSE). You are free to use, modify, and distribute the code for educational purposes, as long as you adhere to the terms outlined in the license.
